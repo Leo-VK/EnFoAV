@@ -98,7 +98,7 @@ Our package covers the entire process of constructing forecasting models, includ
 | 26 |   TimeXer   |   |   deep learning   |                          quantile regression based on TimeXer                         |
 | 27 |   N-BEATSX   |   |   deep learning   |                          quantile regression based on N-BEATSX                         |
 | 28 |   BiTCN   |   |   deep learning   |                          quantile regression based on BiTCN                         |
-| 29 |   TFT   |   |   deep learning   |                          quantile regression based on TFT                         |
+| 29 |   Temporal Fusion Transformer   |   |   deep learning   |                          quantile regression based on Temporal Fusion Transformer                         |
 | 30 |   TiDE   |   |   deep learning   |                          quantile regression based on TiDE                         |
 | 31 |   TsmixerEXT   |   |   deep learning   |                          quantile regression based on TsmixerEXT                         |
 ## Quick Start
