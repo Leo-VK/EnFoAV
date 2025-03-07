@@ -21,8 +21,17 @@ We include several different datasets in our load forecasting archive. There is 
 |  8 |   Bull   |      41      |  17544 |   hourly   |  building  |   airTemperature, wind speed, etc   |
 |  9 | Cockatoo |       1      |  17544 |   hourly   |  building  |   airTemperature, wind speed, etc   |
 | 10 |    Panama   |       1      |  13033 |   hourly   | aggregated |                  airTemperature                 |
-| 11 |    REF   |       72     |  -     | 15 minute  |      -     |     irradiance, temperature, etc    |
-| 12 |    Electricity Price   |       2     |  -     | hourly  |      -     |     load prediction, wind power prediction, etc    |
+| 11 |    Station onshore wind from REF   |       10     |  -     | 15 minute  |      -     |     wind speed, etc    |
+| 12 |    Station offshore wind from REF   |       1     |  -     | 15 minute  |      -     |     wind speed, etc    |
+| 13 |    Station PV from REF   |       10     |  -     | 15 minute  |      -     |     irradiance, temperature, etc    |
+| 14 |    City onshore wind from REF   |       16     |  -     | 15 minute  |      -     |     wind speed, etc    |
+| 15 |    City offshore wind from REF   |       8     |  -     | 15 minute  |      -     |     wind speed, etc    |
+| 16 |    City PV from REF   |       13     |  -     | 15 minute  |      -     |     irradiance, temperature, etc    |
+| 17 |    Region onshore wind from REF   |       5     |  -     | 15 minute  |      -     |     wind speed, etc    |
+| 18 |    Region offshore wind from REF   |       4     |  -     | 15 minute  |      -     |     wind speed, etc    |
+| 19 |    Region PV from REF   |       5     |  -     | 15 minute  |      -     |     irradiance, temperature, etc    |
+| 20 |    DK1 from Electricity Price   |       1     |  -     | hourly  |      -     |     load prediction, wind power prediction, etc    |
+| 21 |    DK2 from Electricity Price   |       1     |  -     | hourly  |      -     |     load prediction, wind power prediction, etc    |
 
 Among them, REF is our newly open-source renewable energy dataset, which contains several renewable energy series including onshore wind, offshore wind, and PV. We will make it open-source soon.
 
