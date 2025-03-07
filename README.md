@@ -66,7 +66,7 @@ pip install -r requirements.txt
   - pytorch
 ## Overall framework
 Our package covers the entire process of constructing forecasting models, including data preprocessing, construction of forecasting models, etc.
-![contents](https://anonymous.4open.science/r/EnFoAV-3033/figure/Energy_Forecasting.jpg)
+![contents](https://github.com/Leo-VK/EnFoAV/blob/main/figure/Energy_Forecasting.jpg)
 ## Available forecasting models 
 |    |    Models   | Paper |        Type       |                                      Description                                      |
 |:--:|:-----------:|:-----:|:-----------------:|:-------------------------------------------------------------------------------------:|
@@ -101,6 +101,13 @@ Our package covers the entire process of constructing forecasting models, includ
 | 29 |   Temporal Fusion Transformer   | [link](https://arxiv.org/abs/1912.09363)  |   deep learning   |                          quantile regression based on Temporal Fusion Transformer                         |
 | 30 |   TiDE   | [link](https://arxiv.org/abs/2304.08424)  |   deep learning   |                          quantile regression based on TiDE                         |
 | 31 |   TsmixerEXT   |  [link](https://arxiv.org/abs/2303.06053) |   deep learning   |                          quantile regression based on TsmixerEXT                         |
+
+## Ex modules
+
+We have implemented some modules to deal with the auxiliary variables that are widely used in energy forecasting, including the TE embedding method. Here is the overview.
+
+
+
 ## Quick Start
 To start forecasting, we first need to import some packages.
 ```python
@@ -127,7 +134,7 @@ import warnings
 warnings.filterwarnings("ignore")
 import ast
 ```
-Import the dataset, the example of the format of the dataset can be seen in [./data](https://anonymous.4open.science/r/EnFoAV-3033/data/GEF14/). 
+Import the dataset, the example of the format of the dataset can be seen in [./data](https://github.com/Leo-VK/EnFoAV/blob/main/data/GEF14/). 
 ```python
 repeat = 3
 site_id = "GEF14"
@@ -169,7 +176,7 @@ loss_function = pytorchtools.ContinuousPiecewiseLinearFunction(breakpoint)
 
 ## How to add your own forecasting method into the framework
 Based on Pytorch, users can simply add their own defined deep learning network to our forecasting framework.
-Firstly, users need to define the initialization method for the model in [./models/model_init.py](https://anonymous.4open.science/r/EnFoAV-3033/models/model_init.py)
+Firstly, users need to define the initialization method for the model in [./models/model_init.py](https://github.com/Leo-VK/EnFoAV/blob/main/models/model_init.py)
 ```python
 class Predictor(MultiQuantileRegressor):
     def __init__(self, quantiles: List[float],device,ex_model = None):
@@ -188,7 +195,7 @@ class Predictor(MultiQuantileRegressor):
             loss_function=pytorchtools.PinballLoss(self.quantiles,self.device),device =self.device)
         return self
 ```
-Secondly, users need to add the structure of the model in [./models/pytorch.py](https://anonymous.4open.science/r/EnFoAV-3033/models/pytorch.py)
+Secondly, users need to add the structure of the model in [./models/pytorch.py](https://github.com/Leo-VK/EnFoAV/blob/main/models/pytorch.py)
 ```python
 class my_MQuantile_Model(nn.Module):
     def __init__(self,configs):
@@ -204,7 +211,7 @@ methods_to_train.append(mi.Predictor())
 ```
 
 ## Forecasting evaluation
-We include several metrics to evaluate the forecasting performance and summarize them below. For details, users can check it in [./evaluation/metrics.py](https://anonymous.4open.science/r/EnFoAV-3033/evaluation/metrics.py)
+We include several metrics to evaluate the forecasting performance and summarize them below. For details, users can check it in [./evaluation/metrics.py](https://github.com/Leo-VK/EnFoAV/blob/main/evaluation/metrics.py)
 |    |       Metrics      | Calculation method | Metric type |                                                                     Description                                                                    |
 |:--:|:------------------:|:------------------:|:-----------:|:--------------------------------------------------------------------------------------------------------------------------------------------------:|
 |  1 | CoverageError (CE) |          $$CE = \frac{1}{n} \sum_{t=1}^{n} (I(L_t \leq y_t \leq U_t) - (UB - LB))$$         |  probability  |    measures the difference between the proportion of actual observations falling within the forecasting interval and the expected coverage rate    |
@@ -225,5 +232,5 @@ We include several metrics to evaluate the forecasting performance and summarize
 
 Based on different quantiles, we can give evaluation metrics in matrix form and visualize them to intuitively compare different forecasting methods. The following are relevant visualization examples. 
 
-![contents](https://anonymous.4open.science/r/EnFoAV-3033/figure/visualization.jpg)
+![contents](https://github.com/Leo-VK/EnFoAV/blob/main/figure/visualization.jpg)
 
