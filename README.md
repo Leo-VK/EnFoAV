@@ -106,6 +106,8 @@ Our package covers the entire process of constructing forecasting models, includ
 
 We have implemented some modules to deal with the auxiliary variables that are widely used in energy forecasting, including the TE embedding method. Here is the overview.
 
+![contents](https://github.com/Leo-VK/EnFoAV/blob/main/figure/ex_structure.jpg)
+
 
 
 ## Quick Start
