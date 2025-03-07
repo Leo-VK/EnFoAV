@@ -8,7 +8,7 @@ This repository mainly aims at implementing routines for probabilistic energy fo
 The datasets and their forecasting results in this archive will be released after arrangement. Please refer to the notebook for reproducing the results on the GEF14 dataset. Users can easily construct different forecasting models by selecting different Feature engineering methods and preprocessing, post-processing, and training models.
 
 ## Dataset
-We include several different datasets in our load forecasting archive. And there is a summary of them.
+We include several different datasets in our load forecasting archive. There is a summary of them.
 |    |  Dataset | No.of series | Length | Resolution |  Load type |          External variables         |
 |:--:|:--------:|:------------:|:------:|:----------:|:----------:|:-----------------------------------:|
 |  1 |  Covid19 |       1      |  24976 |   hourly   | aggregated |    airTemperature, Humidity, etc    |
@@ -80,27 +80,27 @@ Our package covers the entire process of constructing forecasting models, includ
 |  8 |    LSTNet   |  [link](https://dl.acm.org/doi/abs/10.1145/3209978.3210006) |   deep learning   |                          quantile regression based on LSTNet                          |
 |  9 |   Wavenet   |  [link](https://arxiv.org/abs/1609.03499) |   deep learning   |                          quantile regression based on Wavenet                         |
 | 10 |   N-BEATS   |  [link](https://arxiv.org/abs/1905.10437) |   deep learning   |                          quantile regression based on N-BEATS                         |
-| 11 |   Informer   |   |   deep learning   |                          quantile regression based on Informer                         |
-| 12 |   Autoformer   |  |   deep learning   |                          quantile regression based on Autoformer                         |
-| 13 |   Fedformer   |   |   deep learning   |                          quantile regression based on Fedformer                         |
-| 14 |   DLinear   |   |   deep learning   |                          quantile regression based on DLinear                         |
-| 15 |   FiLM   |   |   deep learning   |                          quantile regression based on FiLM                         |
-| 16 |   iTransformer   |   |   deep learning   |                          quantile regression based on iTransformer                         |
-| 17 |   NSTransformer   |   |   deep learning   |                          quantile regression based on NSTransformer                         |
-| 18 |   PatchTST   |   |   deep learning   |                          quantile regression based on PatchTST                         |
-| 19 |   SegRNN   |   |   deep learning   |                          quantile regression based on SegRNN                         |
-| 20 |   TimeMixer   |   |   deep learning   |                          quantile regression based on TimeMixer                         |
-| 21 |   TimesNet   |   |   deep learning   |                          quantile regression based on TimesNet                         |
-| 22 |   Tsmixer   |   |   deep learning   |                          quantile regression based on Tsmixer                         |
-| 23 |   FreTS   |   |   deep learning   |                          quantile regression based on FreTS                         |
-| 24 |   Reformer   |   |   deep learning   |                          quantile regression based on Reformer                         |
-| 25 |   MICN   |   |   deep learning   |                          quantile regression based on MICN                         |
-| 26 |   TimeXer   |   |   deep learning   |                          quantile regression based on TimeXer                         |
-| 27 |   N-BEATSX   |   |   deep learning   |                          quantile regression based on N-BEATSX                         |
-| 28 |   BiTCN   |   |   deep learning   |                          quantile regression based on BiTCN                         |
-| 29 |   Temporal Fusion Transformer   |   |   deep learning   |                          quantile regression based on Temporal Fusion Transformer                         |
-| 30 |   TiDE   |   |   deep learning   |                          quantile regression based on TiDE                         |
-| 31 |   TsmixerEXT   |   |   deep learning   |                          quantile regression based on TsmixerEXT                         |
+| 11 |   Informer   | [link](https://arxiv.org/abs/2012.07436)  |   deep learning   |                          quantile regression based on Informer                         |
+| 12 |   Autoformer   | [link](https://arxiv.org/abs/2106.13008) |   deep learning   |                          quantile regression based on Autoformer                         |
+| 13 |   Fedformer   |  [link](https://arxiv.org/abs/2201.12740) |   deep learning   |                          quantile regression based on Fedformer                         |
+| 14 |   DLinear   | [link](https://arxiv.org/abs/2205.13504)  |   deep learning   |                          quantile regression based on DLinear                         |
+| 15 |   FiLM   |[link](https://arxiv.org/abs/2205.08897)   |   deep learning   |                          quantile regression based on FiLM                         |
+| 16 |   iTransformer   |  [link](https://arxiv.org/abs/2310.06625) |   deep learning   |                          quantile regression based on iTransformer                         |
+| 17 |   NSTransformer   | [link](https://arxiv.org/abs/2205.14415)  |   deep learning   |                          quantile regression based on NSTransformer                         |
+| 18 |   PatchTST   | [link](https://arxiv.org/abs/2211.14730)  |   deep learning   |                          quantile regression based on PatchTST                         |
+| 19 |   SegRNN   | [link](https://arxiv.org/abs/2308.11200)  |   deep learning   |                          quantile regression based on SegRNN                         |
+| 20 |   TimeMixer   |  [link](https://arxiv.org/abs/2405.14616) |   deep learning   |                          quantile regression based on TimeMixer                         |
+| 21 |   TimesNet   |  [link](https://arxiv.org/abs/2210.02186) |   deep learning   |                          quantile regression based on TimesNet                         |
+| 22 |   Tsmixer   |  [link](https://arxiv.org/abs/2303.06053) |   deep learning   |                          quantile regression based on Tsmixer                         |
+| 23 |   FreTS   | [link](https://arxiv.org/abs/2311.06184)  |   deep learning   |                          quantile regression based on FreTS                         |
+| 24 |   Reformer   | [link](https://arxiv.org/abs/2001.04451)  |   deep learning   |                          quantile regression based on Reformer                         |
+| 25 |   MICN   |  [link](https://openreview.net/forum?id=zt53IDUR1U) |   deep learning   |                          quantile regression based on MICN                         |
+| 26 |   TimeXer   |  [link](https://arxiv.org/abs/2402.19072) |   deep learning   |                          quantile regression based on TimeXer                         |
+| 27 |   N-BEATSX   | [link](https://arxiv.org/abs/1905.10437)  |   deep learning   |                          quantile regression based on N-BEATSX                         |
+| 28 |   BiTCN   |  [link](https://www.sciencedirect.com/science/article/pii/S0169207021001850) |   deep learning   |                          quantile regression based on BiTCN                         |
+| 29 |   Temporal Fusion Transformer   | [link](https://arxiv.org/abs/1912.09363)  |   deep learning   |                          quantile regression based on Temporal Fusion Transformer                         |
+| 30 |   TiDE   | [link](https://arxiv.org/abs/2304.08424)  |   deep learning   |                          quantile regression based on TiDE                         |
+| 31 |   TsmixerEXT   |  [link](https://arxiv.org/abs/2303.06053) |   deep learning   |                          quantile regression based on TsmixerEXT                         |
 ## Quick Start
 To start forecasting, we first need to import some packages.
 ```python
