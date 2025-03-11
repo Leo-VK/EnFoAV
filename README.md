@@ -5,7 +5,7 @@
 This is the code related to the paper 
 "EnFoAV: Benchmarks and Custom Package for Energy Forecasting Considering Auxiliary Variables".
 This repository mainly aims at implementing routines for probabilistic energy forecasting. However, we also provide the implementation of relevant point forecasting models.
-The datasets and their forecasting results in this archive will be released after arrangement. Please refer to the notebook for reproducing the results on the GEF14 dataset. Users can easily construct different forecasting models by selecting different Feature engineering methods and preprocessing, post-processing, and training models.
+The datasets and their forecasting results in this archive will be released in the [Cloud Drive](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/u3009646_connect_hku_hk/Ei9s3K5jNWVCjfa_9y6OgKkBaG7AqIUM9xDQML2aB7NUJg?e=fxDso7). And we are updating them. Please refer to the notebook for reproducing the results on the GEF14 dataset. Users can easily construct different forecasting models by selecting different Feature engineering methods and preprocessing, post-processing, and training models.
 
 ## Dataset
 We include several different datasets in our load forecasting archive. There is a summary of them.
@@ -33,7 +33,7 @@ We include several different datasets in our load forecasting archive. There is 
 | 20 |    DK1 from Electricity Price   |       1     |  -     | hourly  |      -     |     load prediction, wind power prediction, etc    |
 | 21 |    DK2 from Electricity Price   |       1     |  -     | hourly  |      -     |     load prediction, wind power prediction, etc    |
 
-Among them, REF is our newly open-source renewable energy dataset, which contains several renewable energy series including onshore wind, offshore wind, and PV. We will make it open-source soon.
+Among them, REF is our newly open-source renewable energy dataset, which contains several renewable energy series, including onshore wind, offshore wind, and PV. We will make it open-source soon.
 
 ## Prerequisites
 - Python 
