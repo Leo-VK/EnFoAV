@@ -249,12 +249,12 @@ Based on different quantiles, we can give evaluation metrics in matrix form and 
 
  If you find this resource helpful, please consider to star this repository and cite our research:
 
-'''
+```tex
 @article{wang2023benchmarks,
   title={Benchmarks and Custom Package for Energy Forecasting},
   author={Wang, Zhixian and Wen, Qingsong and Zhang, Chaoli and Sun, Liang and Von Krannichfeldt, Leandro and Pan, Shirui and Wang, Yi},
   journal={arXiv preprint arXiv:2307.07191},
   year={2023}
 }
-'''
+```
 
