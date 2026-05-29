@@ -1,4 +1,4 @@
-# EnFoAV
+# EnFoAV: Benchmarks and Custom Package for Energy Forecasting Considering Auxiliary Variables
 
 ## Introduction
 
